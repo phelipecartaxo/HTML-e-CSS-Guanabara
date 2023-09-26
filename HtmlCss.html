@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML e CSS</title>
+</head>
+<body>
+    <h1>Curso de HTML e CSS - Gustavo Guanabara</h1>
+    <hr>
+    <h1>HTML</h1>
+    <hr>
+    <h2>Algumas Tags</h2>
+    <p><b>h1</b> - título. H1 é o título principal. Quando maior o número do 'h', menor será o título. Vai até o 6</p>
+    <p><b>p</b> - parágrafo</p>
+    <p><b>hr</b> - linha horizontal</p>
+    <p><b>br</b> - pula linha. Não use vários br para ter um espaço maior.</p>
+    <p><b>< !--</b> para fazer comentários.</p>
+    <hr>
+    <h2>Símbolos e Emojis</h2>
+    <p><b><</b> - para escrever este símbolo, tem que colocar & l t ; (tudo junto)</p>
+    <p><b>></b> - para escrever este símbolo, tem que colocar & g t ; (tudo junto)</p>
+    <p><b>&reg;</b> - marca registrada & r e g ; (tudo junto)</p>
+    <p><b>&copy;</b> - copyright & c o p y ; (tudo junto)</p>
+    <p><b>&trade;</b> - & t r a d e ; (tudo junto)</p>
+    <p><b>&euro;</b> - euro & e u r o ; (tudo junto)</p>
+    <p><b>&pound;</b> - libra & p o u n d ; (tudo junto)</p>
+    <p><b>&Delta;</b> - delta & D e l t a ; (tudo junto)</p>
+    <p><b>&uarr;</b> - seta para cima & u a r r ; (tudo junto)</p>
+    <p><b>EMOJIS</b> - entrar no site emojipedia.org</p>
+    <p><b>😎</b> - basta entrar no site acime copiar e colar o emoji</p>
+    <p><b>&#x1F60E;</b> - outra forma de adicionar é, indo no site, achar o Codepoints do emoji, que neste caso é U+1F60E, pegar e copiar só o que está depois do + (1F60E), e colocar &#x'e o código copiado.</p>
+    <hr>
+    <h2>Imagens</h2>
+    <p><b>unsplash.com ; pexels.com</b> - Sites para pegar imagens</p>
+    <p><b>gimp.org</b> - site para baixar gratuitamente programa que manipula imagens</p>
+    <p><b>Tipos de Imagens:</b> jpeg (alta compactação) e png (imagem fica transparente. Não tem alta compactação)</p>
+    <p>Normalmente em site se usa imagens com no máximo 1500 de largura e 50 de resolução. A maioria usam 650 de largura.</p>
+    <p>Para redimensionar a imagem no gimp, vá em imagem>redimensionar imagem</p>
+    <p>Para exportar a imagem vá em Arquivo>Exportar como ... coloque o lugar que quer exportar e coloque a qualidade da imagem (normalmente se usa 70)</p>
+    <p>Não exporte uma imagem sobre a outra. Tenha sempre a original.</p>
+    <p></p>
+    <p><b>&lt;img src="local da imagem" alt="descrição da imagem"&gt;</b> - adiciona imagem</p>
+    <p>Caso a imagem nao esteja na mesma pasta do arquivo html, caso esteja numa sub-pasta, o src estará assim: <b>src="nomeDaPasta/nomeDoArquivo"</b></p>
+    <p>Também podemos carregar imagens externas. Vá na imagem, aperta com botão direito, 'Copiar Endereço da Imagem' e colar no src=""</p>
+    <hr>
+    <h2>Ícones de Favoritos</h2>
+    <p>Ideal que a imagem seja em <b>ico</b></p>
+    <p><b>iconarchive.com</b> - site para pegar icones de favoritos. Não esquecer de baixar em ico</p>
+    <p><b>favicon.cc</b> - site para vc mesmo fazer o ícone.</p>
+    <p><b>favicon.io</b> - site transforma texto, imagem ou emoji em ico</p>
+    <p><b>link:favicon</b> - irá escrever isso e criar a tag dentro do <b>head</b>, em cima do <b>title</b>. Depois é só colocar o local do arquivo ico em <b>href=""</b> dentro da tag.</p>
+    <hr>
+    <h2>Formatação de Texto</h2>
+    <p><b>b</b> - negrito (não semântica)</p>
+    <p><b>strong</b> - negrito/destaque (semântico)</p>
+    <p><b>i</b> - itálico (não semântico)</p>
+    <p><b>em</b> - itálico/ênfase (semântico)</p>
+    <p><b>mark</b> - texto marcado. Para mudar a cor padrão do marcador(amarelo), usar CSS (background color) na tag</p>
+    <p><b>big</b></p> - texto grande(está obsoleto)
+    <p><b>small</b> - texto pequeno</p>
+    <p><b>del</b> - texto deletado,riscado</p>
+    <p><b>ins</b> - texto sublinhado,inserido</p>
+    <p><b>sup</b> - texto sobrescrito</p>
+    <p><b>sub</b> - texto subscrito</p>
+    <p><b>code</b> - deixa como fonte monoespaçada</p>
+    <p><b>q</b> - citação("")</p>
+    <p><b>blockquote</b> citação completa. Vai aparecer deslocada para direita</p>
+    <p><b>abbr</b> - para abreviações. Em title="", colocar o que significa a abreviação.</p>
+    <hr>
+    <h2>Listas</h2>
+    <p><b>ol</b> - lista ordenada. Dentro da tag ol, usamos a tag <b>li</b></p>
+    <p><b>ol type="5 opções":</b> - <b>1</b>:ordenação numérica; <b>A</b>: ordenação alfabética maiúscula; <b>a</b>: ordenação alfabética minúscula; <b>I</b>: ordenação com números romanos maiúsculos; <b>i</b>: ordenação com números romanos minúsculos.</p>
+    <p><b>ul</b> - lista não ordenada. Dentro da tag ul, usamos a tag <b>li</b></p>
+    <p><b>ul type="algumas opções"</b> - <b>disc</b>: type padrão (bolinha preta); <b>circle</b>: bolinha aberta; <b>square</b>: quadradinho</p>
+    <p>É possível misturar os dois tipos de listas</p>
+    <p><b>dl</b> - lista de definições. Dentro da tag dl, colocamos a tag <b>dt</b> (termo) e em seguida a tag <b>dd</b> (descrição)</p>
+    <hr>
+    <h2>Links (Externos e Internos)</h2>
+    <p><b>a href="url do site ou nome do arquivo"</b> - O site irá abrir na mesma página</p>
+    <p><b>a href="url do site ou nome do arquivo" target="_blank"</b> - O site será aberto em outra página do navegador por causa do <b>target="_blank"</b></p>
+    <p><b>Andando Pelas Pastas</b> - <b>../</b> (pasta anterior) ; <b>./</b> (mesma pasta)</p>
+    <hr>
+    <h2>Imagens Dinâmicas</h2>
+    <p><b>picture</b> - tag que parece com imagem, mas permite criar várias sorces, ou seja, varias fontes. A imagem vai se adaptando ao tamanho da tela</p>
+    <p>Coloque a ordem dos tamanos na tag picture</p>
+    <img src="prints/aula10.png" alt="">
+    <hr>
+    <h2>Áudio</h2>
+    <p><b>audio src="local do audio" controls</b></p>
+    <p>Caso coloque <b>autoplay</b>, o áudio vai começar a tocar assim que a página caregar</p>
+    <p>Caso coloquei <b>loop</b>, o áudio vai tocar novamente quando acabar.</p>
+    <p>Compatível com mp3, wav ou ogg.</p>
+    <p>É possível fazer igual em Imagens Dinâmicas. Usando vários sources</p>
+    <hr>
+    <h2>Vídeos Hospedados Localmente</h2>
+    <p>Compativeis com mp4, webm ou ogb</p>
+    <p><b>video src="local do video" width="tamanho" poster="local de uma imagem para usar de capa do vídeo" controls</b></p>
+    <p><b>handbrake</b> - aplicativo gratuito pra videos. Neste aplicativo vc consegue mudar o formato do vídeo e a qualidade.</p>
+    <p>É possível fazer igual em Imagens Dinâmicas e Áudios. Usando vários sources</p>
+    <hr>
+    <h2>Vídeos Externo</h2>
+    <p><b>youtube:</b> vai no vídeo, compartilhar, incorporar, copiar e colar.</p>
+    <p>Forma ideal de colocar vídeo no site, pois não consome muita banda.</p>
+    <p><b>vimeo</b> - outra plataforma que é possivel pegar vídeo</p>
+    <hr>
+    <h2>CSS Inline, Interno, Externo</h2>
+    <p><b>style=""</b> - dentro da tag, entre &lt; &gt;</p>
+    <p><b>&lt;style&gt;</b> - tag que fica dentro do <b>head</b> da página html</p>
+    <p><b>link rel="" href="nome do arquivo .css"</b> - link que deve ser colocado dentro da tag <b>head</b></p>
+    <p>O recomendado é usar o Externo, porém o Inline é o mais forte, depois o Interno e depois o Externo.</p>
+    <hr>
+    <h1>CSS</h1>
+    <hr>
+    <h2>Cores</h2>
+    <p><b>Formas de Representar Cores:</b> escrevendo o nome da cor (white), colocando o cógio hexadecimal (#ffffff), rgb (rgb(255, 255, 255)) e hsl (hsl(0, 0%, 100%))</p>
+    <h3>Circulo de Cores</h3>
+    <img src="prints/Screenshot_20230918_184635_YouTube.jpg" width="600" alt="">
+    <h3>Cores Primárias</h3>
+    <img src="prints/Screenshot_20230918_184647_YouTube.jpg" width="600" alt="">
+    <h3>Cores Secundárias</h3>
+    <img src="prints/Screenshot_20230918_184657_YouTube.jpg" width="600" alt="">
+    <h3>Cores Terciárias</h3>
+    <img src="prints/Screenshot_20230918_184705_YouTube.jpg" width="600" alt="">
+    <h3>Temperatura das Cores</h3>
+    <img src="prints/Screenshot_20230918_184758_YouTube.jpg" width="600" alt="">
+    <h3>Cores Complementares</h3>
+    <img src="prints/Screenshot_20230918_185023_YouTube.jpg" width="600" alt="">
+    <h3>Cores Análogas</h3>
+    <img src="prints/Screenshot_20230918_185130_YouTube.jpg" width="600" alt="">
+    <h3>Cores Análogas e uma Complementar</h3>
+    <img src="prints/Screenshot_20230918_185205_YouTube.jpg" width="600" alt="">
+    <h3>Cores Análogas Relacionadas</h3>
+    <img src="prints/Screenshot_20230918_185310_YouTube.jpg" width="600" alt="">
+    <h3>Cores Intercaladas</h3>
+    <img src="prints/Screenshot_20230918_185355_YouTube.jpg" width="600" alt="">
+    <h3>Cores Triádicas</h3>
+    <img src="prints/Screenshot_20230918_185424_YouTube.jpg" width="600" alt="">
+    <h3>Cores em Quadrado</h3>
+    <img src="prints/Screenshot_20230918_185500_YouTube.jpg" width="600" alt="">
+    <h3>Cores Tetrádicas</h3>
+    <img src="prints/Screenshot_20230918_185536_YouTube.jpg" width="600" alt="">
+    <h3>Monocromia</h3>
+    <img src="prints/Screenshot_20230918_185620_YouTube.jpg" width="600" alt="">
+    <p><b>color.adobe.com</b> - site para ver as paletas de cores no circulo cromático</p>
+    <p><b>paletton.com</b> - site para ver paletas de cores e ainda monta um exemplo de site</p>
+    <p><b>colorzilla</b> - extensão do chrome que pega as cores dos sites</p>
+    <h3>Degradê</h3>
+    <p><b>background-image: linear-gradient(90deg,white,blue)</b> - 90deg é o grau que estará o gradiente/degradê. Pode colocar quantas cores quiser</p>
+    <hr>
+    <h2>Tipografia</h2>
+    <p><b>font-family: 'fonte'</b> - para colocar a fonte</p>
+    <p><b>font-size: 'tamanho da fonte'</b> - para colocar o tamanho da fonte</p>
+    <p><b>MEDIDAS:</b> recomendado usar px (normalmente 16px é o tamanho normal/padrão da fonte) ou em (relativo a letra M maiúscula da fonte). <b>16px=1em</b></p>
+    <p><b>font-weight: 'peso da fonte'</b> - lighter (mais magro), normal, bold(mais escura), bolder(bem mais escura). Forma de colocar em negrito</p>
+    <p>Nem toda fonte aceita todos os pesos, mas todas aceitam normal e bold.</p>
+    <p>Pode usar medidas numéricas: vai de 100 a 900. Mas nem todas as fontes aceitam.</p>
+    <p><b>font-style: 'normal ou italic'</b> - para colocar em itálico. Nem toda fonte aceita</p>
+    <p><b>text-decoration: underline</b> - sublinhado</p>
+    <p><b>text-decoration: none</b> - tira a linha dos links</p>
+    <p><b>font: 'font-style' 'font-weight' 'font-size' 'font-family'</b> - forma de colocar tudo numa linha só</p>
+    <p><b>google fonts</b> - fontes externas, que não possui no Visual Code</p>
+    <p>pegar o @import da fonte externa e colar no style, na primeira linha, fora de um seletor</p>
+    <p><b>Fonts Ninja</b> - extensão do google para descobrir qual fonte está sendo utilizada em algum site</p>
+    <p><b>text-align: 'alinhamento'</b> - left(padrão),center, right, justify</p>
+    <p><b>text-indent: 'valor de afastamento do inicio do parágrafo (px)'</b> - o parágrafo irá iniciar mais a frente</p>
+    <hr>
+    <h2>Seletores Personalizados</h2>
+    <p><b>'nome da tag'</b> - todos as tag com o mesmo nome sofrerão as mudança.</p>
+    <p><b>#'nome do ID'</b> - para selecionar uma ID. Só será formatado quem tem esta ID</p>
+    <p><b>.'nome da CLASS</b> - - para selecionar uma CLASS. Só será formatado quem tem esta CLASS</p>
+    <p><b>Diferença de ID e CLASS:</b> só usa ID em apenas um elemento, não pode colocar o mesmo ID em vários elementos. Pode ter vários elementos com a mesma CLASS</p>
+    <p>É possível um elemento ter CLASS e ID, porém o ID vai sobrepor as configurações da CLASS. E a CLASS vai sobrepor as configurações de uma TAG normal.</p>
+    <p><b>:</b> - Pseudo-classes. É uma confifuração de estado</p>
+    <p><b>'tag,id ou class':hover</b> - é uma Pseudo-classes. Quando passar o mouse por cima, alguma coisa vai acontecer</p>
+    <p><b>div > p</b> - vai pegar o p (filho) que está dentro da div (pai)</p>
+    <p><b>obs: display: inline-block</b> - coloca tudo numa linha só</p>
+    <p><b>obs: display: none</b> - deixa algo oculto</p>
+    <p><b>obs: display: block</b> - aparece algo oculto</p>
+    <p><b>'tag,id ou class':visited</b> - vai modificar aquilo que já foi visitado. Exemplo: se apertou num link, aquele link (a:visited) irá sofrer a mudança que colocar</p>
+    <p><b>::</b> - Pseudo-Elementos</p>
+    <p><b>'tag,id ou class'::after ou before</b> - depois ou antes de tudo ocorrerá algo</p>
+    <hr>
+    <h2>Modelo de Caixas</h2>
+    <p>Uma caixa pode estar dentro do outro (aninhamento)</p>
+    <p><b>height: 'tamanho da altura'</b> - altura</p>
+    <p><b>width: 'tamanho da largura'</b> - largura</p>
+    <p><b>border-width: 'tamanho da largura da borda';</b></p>
+    <p><b>border-style: solid</b>  </p>
+    <p><b>border-color: 'cor'</b> - para mudar a cor da borda</p>
+    <p><b>border: 'width' 'style' 'color'</b> - forma resumida de colocar todas as outras 3 border acima</p>
+    <p><b>padding: 'tamanho'</b> - faz com que a borda se distancie do conteúdo. Seria da borda pra dentro. Fará o padding para todos os lados igualmente. </p>
+    <p><b>padding: 'top' rigth' 'bottom' 'left'</b></p>
+    <p><b>padding-top: 'tamanho'</b> - padding para cima</p>
+    <p><b>padding-rigth: 'tamanho'</b> - padding para direita</p>
+    <p><b>padding-bottom: 'tamanho'</b> - padding para baixo</p>
+    <p><b>padding-left: 'tamanho'</b> - padding para esqueda</p>
+    <p><b>margin: 'tamanho'</b> - distância entre uma caixa e outra. Seria da borda pra fora. Fará margin para todos os lados.</p>
+    <p><b>margin-top: 'tamanho'</b> - margin para cima</p>
+    <p><b>margin-rigth: 'tamanho'</b> - margin para direita</p>
+    <p><b>margin-bottom: 'tamanho'</b> - margin para baixo</p>
+    <p><b>margin-left: 'tamanho'</b> - margin para esquerda</p>
+    <p><b>margin: auto</b> - vai centralizar a caixa horizontalmente no meio</p>
+    <p><b>obs:</b> margin: auto funciona para caixas, box-level. Caso seja inline-level, usar <b>display: block</b></p>
+    <p><b>outline:</b> - contorno, traçado</p>
+    <p><b>outline-width: 'tamanho da largura da borda';</b></p>
+    <p><b>outline-style: dashed</b> - vai deixar pontilhado  </p>
+    <p><b>outline-color: 'cor'</b> - para mudar a cor do outline</p>
+    <p><b>outline: 'width' 'style' 'color'</b> - forma resumida de colocar todas os outras 3 outline acima</p>
+    <p><b>box-shadow: 'deslocamento horizontal' 'deslocamento vertical' espalhamento' 'cor da sombra'</b> - para colocar sombra </p>
+    <p>A sombra não pode ser uma cor sólida. Tem que ser uma cor mais transparente</p>
+    <p><b>border-radius: 'tamanho'</b> - para arredondar as vérteces da conta</p>
+    <p><b>border-radius: 50%</b> - deixa redondo</p>
+    <p>border-top-right-radius / border-top-left-radius / border-bottom-right-radius / border-bottom-left-radius</p>
+    <h3>Tipos de Caixa</h3>
+    <p><b>Box-level</b> - uma caixa inserida dentro de outra será inicializada na proxima linha e ocupará a largura inteira da tela. </p>
+    <p>Ex: div, h1-h6, p, main, header, nav, footer, form, video</p>
+    <p><b>Inline-level</b> - uma caixa inserida dentro de outra será inicializada na mesma linha e não ocupará o tamanho até o final, terá o tamanho que precisa.</p>
+    <p>Ex: span, a, code, small, strong, em, sup, sub, label, button, input, select.</p>
+    <p><b>obs: DIV e SPAN tem a mesma função de serem caixas, mas funcionam de formas diferentes.</b></p>
+    <p><b>display: block</b> - vai se transformar numa box-level</p>
+    <p><b>display: inline</b> - vai se transformar numa inline-level</p>
+    <h3>Grouping Tags (HTML)</h3>
+    <p><b>div</b> - box-level.</p>
+    <p><b>span</b> - inline-level.</p>
+    <p><b>header</b> - cabeçalho</p>
+    <b><p>nav</p> - menu</b>
+    <p><b>main</b> - conteúdo principal</p>
+    <p><b>footer</b> - rodapé</p>
+    <p><b>article</b> - tag semântica para dizer que é um artigo</p>
+    <p><b>section</b> - tag semântica que representa uma seção genérica</p>
+    <hr>
+    <h2>Desafio do Módulo 2</h2>
+    <p><b>https://wireframepro.mockflow.com/</b> - site para criar estrutura do site, para desenhar o formato do site.</p>
+    <p><b>obs: ctrl + shift + p >> Emmet:Envolver com Abreviação</b> vai envelopar o que estiver selecionado com a tag que escrever</p>
+    <h3>Variáveis em CSS</h3>
+    <p><b>:root{<br>
+        --cor0: #c5ebd6;<br>
+        --cor1: #83e183ad;<br>
+        --cor2: #3ddc84;<br>
+        --cor3: #2fa866;<br>
+        --cor4: #1a5c37;<br>
+        --cor5: #063d1e; <br>
+        
+    }</b> foi criado variaveis de cores</p>
+    <h3>Responsividade Para Sites</h3>
+    <p><b>Window Resizer</b> - extensão do Google para ver a o tamanho da página</p>
+    <p><b>transition-duration: 'tempo'</b> - tempo de transição</p>
+    <p><b>line-height: 'tamanho da linha'</b> - altura entre linhas</p>
+    <hr>
+    <h2>GIT e GITHUB</h2>
+    <p><b>Git</b> - gerenciador de versões. Mantem versões do código dentro do próprio computador. (repositório local)</p>
+    <p><b>GitHub</b> - é um repositório remoto na qual você coloca seus códigos num site. Ele faz backup do código/arquivo na nuvem. É possivel trabalhar em equipe.</p>
+    <p><b></b></p>
+    <p><b></b></p>
+    <p><b></b></p>
+    <p><b></b></p>
+    <p><b></b></p>
+    <p><b></b></p>
+    <p><b></b></p>
+    <p><b></b></p>
+    
+</body>
+</html>
