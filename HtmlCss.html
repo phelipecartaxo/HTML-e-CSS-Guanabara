@@ -290,6 +290,44 @@
     <p><b>left: 'distância'</b></p>
     <p><b>top: 'distância'</b></p>
     <p><b>transform: translate(-50%,-50%);</b> - dentro do translate pode ser positivo e negativo. Ele fará a caixa andar. Usando -50% e colocando 50% no left e top, a caixa ficará fixada no centro da tela</p>
+    <hr>
+    <h2>Tabelas</h2>
+    <p><b>table</b> - tag que delimita a tabela</p>
+    <p><b>tr</b> - tag para abrir linha</p>
+    <p><b>td</b> - tag para colocar conteúdo na célula</p>
+    <p><b>obs:</b> a tabela estará crua. Então deve juntar com CSS. Colocando bordas no td.</p>
+    <p><b>border-collapse: collapse;</b> - As bordas irão se juntar. Ideal colocar em <b>table</b> em style.</p>
+    <p><b>vertical-align: 'top' ou 'bottom' ou 'middle';</b> para alinhar o conteúdo da célula verticalmente</p>
+    <h3>Hierarquia de Tabelas (simples) <br></h3>
+    <p><b>
+        TABLE = tabela <br>
+        TABLE ROWS = linha de tabela <br>
+        TABLE HEADER = cabeçalho de tabela <br>
+        TABLE DATA = dado de tabela</b></p>
+    <h3>Tags Semântica Para Tabelas Grandes</h3>
+    <p><b>ANATOMIA PARA TABELAS GRANDES <br>
+        TABLE <br>
+            CAPTION = legenda da tabela <br>
+            THEAD = cabeçalho <br>
+                TR,TD,TH <br>
+            TBODY <br>
+                TR,TD,TH <br>
+            TFOOT = rodapé<br>
+                TR,TD,TH</b></p>
+    <p><b>th</b> - tag que representa um tópico. Normalmente usado no thead e tfoot. Já vem padrão em negrito e centralizado</p>
+    <h3>Caption e Escopo de Títulos em Tabela (TH)</h3>
+    <p><b>caption</b> - legenda que fica acima da tabela. Deve colocar togo quando abre a tag table.</p>
+    <p><b>th</b> - tag que representa um tópico. Normalmente usado no thead e tfoot. Já vem padrão em negrito e centralizado. Não é um dado. É um título.</p>
+    <p><b>scope="col"</b> - vai dizer semanticamente que o <b>th</b> terá seus dado em coluna. Não causa resultado visual, apenas semântico</p>
+    <p><b>scope="row"</b> - vai dizer semanticamente que o <b>th</b> terá seus dado em linha. Não causa resultado visual, apenas semântico</p>
+    <p><b>obs:</b> usando scoop em th, você poderá o <b>width</b> da linha ou coluna de referencia usando style inline</p>
+    <h3>Efeito Zebrado</h3>
+    <p>Uma linha de cada cor. Ideal para tabelas grandes. Não precisa ficar restrito apenas a cor. Pode fazer outras alterações no efeito zebrado.</p>
+    <p><b>:nth-child(2n)</b> - Pseudo-classes que faz o efeito. Caso queira trocar o 2n. Pode trocar por <b>odd ou 2n-1 (impares)</b> ou <b>even ou 2n (pares)</b></p>
+    <p><img src="prints/efeitozebrado.png" alt=""></p>
+    <p><b></b></p>
+    <p><b></b></p>
+    <p><b></b></p>
     <p><b></b></p>
     <p><b></b></p>
     <p><b></b></p>
