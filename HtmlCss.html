@@ -320,6 +320,8 @@
     <p><b>th</b> - tag que representa um tópico. Normalmente usado no thead e tfoot. Já vem padrão em negrito e centralizado. Não é um dado. É um título.</p>
     <p><b>scope="col"</b> - vai dizer semanticamente que o <b>th</b> terá seus dado em coluna. Não causa resultado visual, apenas semântico</p>
     <p><b>scope="row"</b> - vai dizer semanticamente que o <b>th</b> terá seus dado em linha. Não causa resultado visual, apenas semântico</p>
+    <p><b>scope="colgroup"</b> - vai dizer semanticamente que o <b>th</b> terá seus dado em várias colunas. Não causa resultado visual, apenas semântico</p>
+    <p><b>scope="row"</b> - vai dizer semanticamente que o <b>th</b> terá seus dado em várias linhas. Não causa resultado visual, apenas semântico</p>
     <p><b>obs:</b> usando scoop em th, você poderá o <b>width</b> da linha ou coluna de referencia usando style inline</p>
     <h3>Efeito Zebrado</h3>
     <p>Uma linha de cada cor. Ideal para tabelas grandes. Não precisa ficar restrito apenas a cor. Pode fazer outras alterações no efeito zebrado.</p>
@@ -330,6 +332,17 @@
     <h3>Mesclagem de Células</h3>
     <p><b>colspan="numero"</b> - vai expandir a célula na quantidade que colocar. A expansão será de colunas</p>
     <p><b>rowspan="numero"</b> - expansão da célula em linha</p>
+    <h3>Destaque de Coluna</h3>
+    <p><b>colgroup</b> - tag que colocará logo após abrir a tag table. Dentro dela, você abrirá a tag <b>col</b> o número de colunas que tem sua tabela. Depois criará uma class ou id para cada col e colocará no style para fazer o destaque. </p>
+    <p>Caso a tabela tenha 4 colunas, mas você quer colocar duas colunas coladas com mesmo destaque, você pode colocar mesma class ou pode colocar 3 col e em uma delas colocar <b>spam="2"</b></p>
+    <h3>Tabelas Responsivas</h3>
+    <p>Selecione a tabela inteira e envelope com <b>div</b>. Nesta div, crie uma <b>id</b> e em style coloque: <b>overflow-x:"auto"</b>(só rolagem vertical) ou <b>overflow-y:"auto"</b>(só rolagem horizontal)</p>
+    <p><b></b></p>
+    <p><b></b></p>
+    <p><b></b></p>
+    <p><b></b></p>
+    <p><b></b></p>
+    <p><b></b></p>
     <p><b></b></p>
     <p><b></b></p>
     <p><b></b></p>
