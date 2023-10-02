@@ -337,11 +337,24 @@
     <p>Caso a tabela tenha 4 colunas, mas você quer colocar duas colunas coladas com mesmo destaque, você pode colocar mesma class ou pode colocar 3 col e em uma delas colocar <b>spam="2"</b></p>
     <h3>Tabelas Responsivas</h3>
     <p>Selecione a tabela inteira e envelope com <b>div</b>. Nesta div, crie uma <b>id</b> e em style coloque: <b>overflow-x:"auto"</b>(só rolagem vertical) ou <b>overflow-y:"auto"</b>(só rolagem horizontal)</p>
-    <p><b></b></p>
-    <p><b></b></p>
-    <p><b></b></p>
-    <p><b></b></p>
-    <p><b></b></p>
+    <hr>
+    <h2>Iframe</h2>
+    <p>É um display inline</p>
+    <p><b>iframe src="endereço do site" frameborder="0"</b> - frameborder="0" significa que não terá uma borda</p>
+    <p>Existem alguns sites que não permitem usa-los como iframe.</p>
+    <p>Como nem todo site funciona com iframe, é interessante usar <b>a</b> dentro da tag iframe para caso o site não aceitar, ter o link.</p>
+    <p>Tamanho Padrão: 300x150</p>
+    <p><b>scolling="auto"</b> - é o padrão. Se o conteúdo exceder o tamanho do frame, vai criar a barra de rolagem</p>
+    <p><b>scolling="yes"</b> - mesmo que o conteúdo estivesse cabendo todo dentro do iframe, iria aparecer a barra de rolagem.</p>
+    <p><b>scolling="não"</b> - em alguns navegadores não irão permitir a rolagem</p>
+    <p><b>frameborder="1"</b> - o iframe terá borda</p>
+    <p>Ideal é usar sites próprio.</p>
+    <p>É possível usar links (a) que irão aparecer no iframe. Para isso, no <b>iframe</b> deve-se colocar name="algum nome". E em <b>a</b> deve-se colocar target="o nome que colocou no iframe". Assim, quando apertar no link, a página será aperta no iframe.</p>
+    <p>Caso queira deixar o iframe com uma mensagem inicial ou uma imagem, você deve tirar o <b>src</b> e colocar <b>srcdoc=""</b>. Dentro deste srcdoc você pode colocar html.</p>
+    <p><b>sandbox="sanbox"</b> - bloqueia todo e qualquer acesso de outros sites que estejam dentro do iframe tentem fazer. Usado para dar mais segurança contra ataques.</p>
+    <p><b>sandbox="allow-same-origin"</b> - vai permitir conteúdo de mesma origem</p>
+    <p><b>referrerpolicy="no-referer"</b> - também trará mais segurança. Significa que o que está carregado dentro do iframe não vai coletar nenhum tipo de informação do usuário</p>
+    <p>É possível usar Mapas do Google e do Waze com iframe. Também é possível usar Documentos do Google Docs</p>
     <p><b></b></p>
     <p><b></b></p>
     <p><b></b></p>
